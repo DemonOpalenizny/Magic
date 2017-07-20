@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.madry.rafal.magic.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fullscreen_content">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:text="-"
+                android:layout_marginTop="85dp"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                style="@android:style/Widget.Holo.Button"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:text="20"
+                android:typeface="sans"
+                android:fontFamily="serif"
+                android:textSize="40sp"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/black"
+                android:textAlignment="center" />
+
+            <Button
+                android:text="+"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="65dp"
+                android:background="@android:color/transparent"
+                android:text="+"
+                android:textSize="40sp" />
+
+
+        </LinearLayout>
+
+        <GridView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:numColumns="4"
+            android:id="@+id/gridView"
+            android:verticalSpacing="2dp"
+            android:horizontalSpacing="2dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
